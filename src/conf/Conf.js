@@ -29,6 +29,6 @@ const conf= {
     appwriteBucketId: import.meta.env.68677e8500044db322c3,
 
 
-}
+};
 
-export default conf
+export default conf;
