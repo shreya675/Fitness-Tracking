@@ -89,9 +89,8 @@ export class AuthService {
         //import.meta.env.VITE_REDIRECT_SUCCESS, // ✅ from env
         
         //import.meta.env.VITE_REDIRECT_FAILURE  // ✅ from env
-
-         conf.redirectSuccess,
-         conf.redirectFailure
+         "https://fra.cloud.appwrite.io/console", // ✅ TEMP success URL (or keep localhost for testing)
+          "https://fra.cloud.appwrite.io/console"
       );
     } catch (error) {
       console.log("Google login error::", error);
