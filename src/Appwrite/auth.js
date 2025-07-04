@@ -86,9 +86,8 @@ export class AuthService {
       // Initiates OAuth2 session with Google
       this.account.createOAuth2Session(
         "google", // Provider name 'google' for Google OAuth
-        "https://fitness-tracking-afk6.onrender.com/dashboard", // Success redirect URL
-
-        "https://fitness-tracker-web.onrender.com/login"  // Failure redirect URL
+        import.meta.env.VITE_REDIRECT_SUCCESS, // ✅ from env
+        import.meta.env.VITE_REDIRECT_FAILURE  // ✅ from env
       );
     } catch (error) {
       console.log("Google login error::", error);
