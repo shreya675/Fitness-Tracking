@@ -12,6 +12,10 @@ const conf = {
   appwriteBucketId: import.meta.env.VITE_APPWRITE_BUCKET_ID,
 
   exerciseApiNinja: import.meta.env.VITE_Exercise_API,
+
+
+  redirectSuccess: import.meta.env.VITE_REDIRECT_SUCCESS,
+  redirectFailure: import.meta.env.VITE_REDIRECT_FAILURE,
 };
 
 export default conf;
