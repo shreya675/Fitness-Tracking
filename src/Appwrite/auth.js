@@ -88,7 +88,7 @@ export class AuthService {
         "google", // Provider name 'google' for Google OAuth
         "https://fitness-tracking-afk6.onrender.com/dashboard", // Success redirect URL
 
-        "http://localhost:5173/login" // Failure redirect URL
+        "https://fitness-tracker-web.onrender.com/login"  // Failure redirect URL
       );
     } catch (error) {
       console.log("Google login error::", error);
